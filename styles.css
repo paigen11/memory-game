@@ -1,0 +1,43 @@
+h1, h2{
+	text-align: center;
+}
+
+.mg-tile{
+	height: 300px;
+	perspective: 500px;
+}
+
+.mg-tile-inner{
+	width: 236px;
+	/* the children will be absolute eventually */
+	position: relative;
+	transform-style: preserve-3d;
+	transition: all .5s;
+	
+}
+
+.mg-front, .mg-back{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 300px;
+	width: 100%;
+	backface-visibility: hidden;
+	border: 1px black solid;
+	
+}
+
+.mg-front{
+	transform: rotateY(180deg);
+}
+
+.mg-back{
+	background: url("images/logo.png") 50% 50% no-repeat;
+	/* width: 236px;
+	height: 236px; */
+}
+
+.flip{
+	transform: rotateY(-180deg);
+
+}
