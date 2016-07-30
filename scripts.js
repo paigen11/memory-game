@@ -136,7 +136,7 @@ $(document).ready(function(){
 					cardsUp.removeClass('flip');
 					}, 1000);
 				
-			if($('.container').find('.matched').length === cards.length * 2){
+			if($('.container-fluid').find('.matched').length === cards.length * 2){
 					$('.container-fluid').addClass('hidden');
 					$('.winner').removeClass('hidden');
 					wins++;
@@ -147,4 +147,3 @@ $(document).ready(function(){
 
 	});
 });
-
